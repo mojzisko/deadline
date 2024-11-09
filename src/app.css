@@ -1,0 +1,27 @@
+/* app.css */
+@import 'swiper/css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'basicSemibold';
+  src: url('/fonts/D_Basic-Semibold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'indivisibleBold';
+  src: url('/fonts/Indivisible_bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'indivisibleMedium';
+  src: url('/fonts/Indivisible_medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
