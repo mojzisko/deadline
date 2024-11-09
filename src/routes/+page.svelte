@@ -4,17 +4,17 @@
 
   const items = [
     {
-      imagePath: "images/prevoznik.png",
+      imagePath: "images/D_projects_800x600.png",
       title: "Převozník",
       href: "/prevoznik",
     },
     {
-      imagePath: "images/prevoznik.png",
+      imagePath: "images/D_projects_800x600.png",
       title: "Převozník",
       href: "/prevoznik",
     },
     {
-      imagePath: "images/prevoznik.png",
+      imagePath: "images/D_projects_800x600.png",
       title: "Převozník",
       href: "/prevoznik",
     },

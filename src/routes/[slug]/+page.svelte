@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import gsap from "gsap";
+  import ProjetItem from "../../components/ProjectItem.svelte";
 
   export let data;
 
@@ -17,28 +18,45 @@
       gsap.fromTo(
         imageElement,
         {
-          scale: 1.04,
-          filter: "blur(5px)",
-          y: 30,
+          scale: 1.03,
+          filter: "blur(3px)",
         },
         {
           scale: 1,
           filter: "blur(0px)",
-          y: 0,
           duration: 1.5,
-          ease: "power2.out",
+          ease: "power3.out",
         }
       );
     }
   });
+
+  const items = [
+    {
+      imagePath: "images/D_projects_800x600.png",
+      title: "Převozník",
+      href: "/prevoznik",
+    },
+    {
+      imagePath: "images/D_projects_800x600.png",
+      title: "Převozník",
+      href: "/prevoznik",
+    },
+    {
+      imagePath: "images/D_projects_800x600.png",
+      title: "Převozník",
+      href: "/prevoznik",
+    },
+  ];
 </script>
 
 <section class="w-full">
   <img
+    bind:this={imageElement}
     src={project.heroImage.src}
     alt="Hero image"
     loading="lazy"
-    class="w-full mt-[-76px] h-[300px] md:h-[900px] 3xl:h-[1080px] object-cover "
+    class="w-full mt-[-85px] md-[-76px] h-[300px] m-auto md:h-[800px] 3xl:h-[1080px] max-w-[1920px] object-cover "
   />
 </section>
 
@@ -59,5 +77,19 @@
       <p class="text-[25px] flex-1 font-indivisibleBold">{project.subTitle}</p>
       <p class="text-[20px] flex-1 font-indivisibleMedium">{project.desc}</p>
     </div>
+  </div>
+</section>
+
+<section class="w-full mt-8  m-auto w-full bg-greyBackground">
+  <div
+    class="max-w-[1440px] m-auto w-full p-[24px] grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-[20px] "
+  >
+    {#each items as item}
+      <ProjetItem
+        href={item.href}
+        imagePath={item.imagePath}
+        title={item.title}
+      />
+    {/each}
   </div>
 </section>

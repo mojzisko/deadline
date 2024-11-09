@@ -3,7 +3,7 @@
   import gsap from "gsap";
 
   const slides = [
-    { id: 1, image: "images/D_projects_prevoznik.png", alt: "Project 1" },
+    { id: 1, image: "images/D_projects_1920x1080.png", alt: "Project 1" },
     { id: 2, image: "images/D_projects_prevoznik2.png", alt: "Project 2" },
     { id: 3, image: "images/D_projects_prevoznik3.png", alt: "Project 3" },
     // Add more slides as needed
@@ -81,7 +81,7 @@
 </script>
 
 <div
-  class="carousel-container w-screen mt-[-76px]  h-[300px] md:h-[1080px] overflow-hidden relative"
+  class="carousel-container w-screen mt-[-85px] md-[-76px] h-[300px] md:h-[800px] 3xl:h-[1080px] max-w-[1920px] m-auto overflow-hidden relative"
   on:touchstart={handlePanStart}
   on:touchmove={handlePanMove}
   on:touchend={handlePanEnd}
