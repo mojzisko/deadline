@@ -1,7 +1,9 @@
 <script>
   import { onMount } from "svelte";
   import gsap from "gsap";
-  import ProjetItem from "../../components/ProjectItem.svelte";
+  import ImageItemdetail from "../../components/ImageItemdetail.svelte";
+  import ProjectItem from "../../components/ProjectItem.svelte";
+  import Grid from "../../components/Grid.svelte";
 
   export let data;
 
@@ -33,7 +35,7 @@
 
   const items = [
     {
-      imagePath: "images/D_projects_800x600.png",
+      imagePath: "images/D_projects_prevoznik.png",
       title: "Převozník",
       href: "/prevoznik",
     },
@@ -77,6 +79,11 @@
       <p class="text-[25px] flex-1 font-indivisibleBold">{project.subTitle}</p>
       <p class="text-[20px] flex-1 font-indivisibleMedium">{project.desc}</p>
     </div>
+    <Grid>
+      {#each items as item}
+        <ImageItemdetail imagePath={item.imagePath} title={item.title} />
+      {/each}
+    </Grid>
   </div>
 </section>
 
@@ -85,16 +92,14 @@
     class="flex flex-col font-basicSemibold  max-w-[1440px] m-auto w-full p-[24px] gap-[30px]"
   >
     <h1 class="text-[20px] lg:text-[25px]">Další projekty</h1>
-    <div
-      class=" grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-[20px] "
-    >
+    <Grid>
       {#each items as item}
-        <ProjetItem
+        <ProjectItem
           href={item.href}
           imagePath={item.imagePath}
           title={item.title}
         />
       {/each}
-    </div>
+    </Grid>
   </div>
 </section>

@@ -22,11 +22,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    /* padding: 24px; */
     padding-top: 0;
-    /* width: 100%;
-    max-width: 1440px; */
-    /* margin: 0 auto; */
     box-sizing: border-box;
   }
 </style>

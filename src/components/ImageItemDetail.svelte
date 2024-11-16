@@ -5,7 +5,6 @@
 
   export let imagePath;
   export let title;
-  export let href;
 
   let titleElement;
 
@@ -70,10 +69,9 @@
   }
 </script>
 
-<a
+<div
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}
-  {href}
   class="relative rounded-[15px] font-basicSemibold group overflow-hidden"
 >
   <img
@@ -83,15 +81,7 @@
     alt={title}
     class="w-full h-auto hover:cursor-pointer"
   />
-
-  <div
-    bind:this={titleElement}
-    class="absolute bottom-4 rounded-[5px] left-4 px-3 py-3 text-white bg-black bg-opacity-70  "
-    style="background: rgba(0, 0, 0, 0.7);"
-  >
-    <p class="text-sm !leading-none md:text-base">{title}</p>
-  </div>
-</a>
+</div>
 
 <style>
   img {

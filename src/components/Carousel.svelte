@@ -3,9 +3,21 @@
   import gsap from "gsap";
 
   const slides = [
-    { id: 1, image: "images/D_projects_1920x1080.png", alt: "Project 1" },
-    { id: 2, image: "images/D_projects_prevoznik2.png", alt: "Project 2" },
-    { id: 3, image: "images/D_projects_prevoznik3.png", alt: "Project 3" },
+    {
+      id: 1,
+      image: "images/main_images/D_projects_2560x1440_ACS.png",
+      alt: "Sparta",
+    },
+    {
+      id: 2,
+      image: "images/main_images/D_projects_2560x1440_BASELINER.png",
+      alt: "Project 2",
+    },
+    {
+      id: 3,
+      image: "images/main_images/D_projects_2560x1440_BIATLON.png",
+      alt: "Project 3",
+    },
     // Add more slides as needed
   ];
 
