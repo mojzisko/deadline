@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import gsap from "gsap";
-  import ImageItemdetail from "../../components/ImageItemdetail.svelte";
+  import ImageItemDetail from "../../components/ImageItemDetail.svelte";
   import ProjectItem from "../../components/ProjectItem.svelte";
   import Grid from "../../components/Grid.svelte";
 
@@ -28,7 +28,7 @@
           filter: "blur(0px)",
           duration: 1.5,
           ease: "power3.out",
-        }
+        },
       );
     }
   });
@@ -58,13 +58,13 @@
     src={project.heroImage.src}
     alt="Hero image"
     loading="lazy"
-    class="w-full mt-[-85px] md-[-76px] h-[300px] m-auto md:h-[800px] 3xl:h-[1080px] max-w-[1920px] object-cover "
+    class="w-full mt-[-85px] md-[-76px] h-[300px] m-auto md:h-[800px] 3xl:h-[1080px] max-w-[1920px] object-cover"
   />
 </section>
 
-<section class="max-w-[1440px] mt-8  m-auto w-full p-[24px] text-white">
+<section class="max-w-[1440px] mt-8 m-auto w-full p-[24px] text-white">
   <div class="flex flex-col gap-[55px]">
-    <div class="flex font-basicSemibold  justify-between items-center">
+    <div class="flex font-basicSemibold justify-between items-center">
       <h1 class="text-[40px] lg:text-[48px]">
         {project.title}
       </h1>
@@ -75,21 +75,21 @@
         zpět
       </a>
     </div>
-    <div class="flex flex-col gap-[10px] md:flex-row justify-between ">
+    <div class="flex flex-col gap-[10px] md:flex-row justify-between">
       <p class="text-[25px] flex-1 font-indivisibleBold">{project.subTitle}</p>
       <p class="text-[20px] flex-1 font-indivisibleMedium">{project.desc}</p>
     </div>
     <Grid>
       {#each items as item}
-        <ImageItemdetail imagePath={item.imagePath} title={item.title} />
+        <ImageItemDetail imagePath={item.imagePath} title={item.title} />
       {/each}
     </Grid>
   </div>
 </section>
 
-<section class="w-full mt-[30px]  m-auto bg-greyBackground">
+<section class="w-full mt-[30px] m-auto bg-greyBackground">
   <div
-    class="flex flex-col font-basicSemibold  max-w-[1440px] m-auto w-full p-[24px] gap-[30px]"
+    class="flex flex-col font-basicSemibold max-w-[1440px] m-auto w-full p-[24px] gap-[30px]"
   >
     <h1 class="text-[20px] lg:text-[25px]">Další projekty</h1>
     <Grid>
