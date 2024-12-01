@@ -3,7 +3,7 @@
   import "../app.css";
 </script>
 
-<div class="app bg-lightBackground dark:bg-darkBackground">
+<div class="app bg-darkBackground">
   <Header />
 
   <main>
@@ -11,11 +11,18 @@
   </main>
 </div>
 
-<style>
+<style global>
   .app {
     display: flex;
     flex-direction: column;
     min-height: 100svh;
+  }
+
+  html,
+  body {
+    background-color: black; /* Ensure no white background leaks */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
   }
 
   main {
