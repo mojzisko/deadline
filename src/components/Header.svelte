@@ -1,5 +1,6 @@
 <script>
   import { onMount, onDestroy } from "svelte";
+  import Lottie from "./Lottie.svelte";
 
   let isMenuOpen = false;
   let isScrolled = false;
@@ -27,7 +28,7 @@
 <!-- <div class="max-w-[1440px] m-auto w-full"> -->
 
 <header
-  class="sticky top-0 z-50 transition-colors duration-300 z-40 rounded-[1px]  font-basicSemibold"
+  class="sticky top-0 z-50 transition-colors duration-300 z-40 rounded-[1px] font-basicSemibold"
   class:bg-transparent={!isScrolled}
   class:bg-black={isScrolled}
 >
@@ -36,13 +37,13 @@
   >
     <!-- Logo Section -->
     <div class="text-xl font-bold">
-      <a href="/" class="text-gray-900 dark:text-white">DEAD_INE</a>
+      <a href="/"><div class="w-[100px] md:w-[120px]"><Lottie /></div></a>
     </div>
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex space-x-12 tracking-wide">
       <a
-        href="/work"
+        href="/"
         class="text-gray-900 dark:text-white capitalize hover:text-blue-500"
         >WORK</a
       >
