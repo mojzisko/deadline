@@ -64,8 +64,8 @@
 
 <section class="max-w-[1440px] mt-8 m-auto w-full p-[24px] text-white">
   <div class="flex flex-col gap-[55px]">
-    <div class="flex font-basicSemibold justify-between items-center">
-      <h1 class="text-[40px] lg:text-[48px]">
+    <div class="flex font-basicSemibold gap-2 justify-between items-center">
+      <h1 class="text-[32px] lg:text-[48px]">
         {project.title}
       </h1>
       <a
@@ -76,7 +76,7 @@
       </a>
     </div>
     <div class="flex flex-col gap-[10px] md:flex-row justify-between">
-      <p class="text-[25px] flex-1 font-indivisibleBold">{project.subTitle}</p>
+      <p class="text-[24px] flex-1 font-indivisibleBold">{project.subTitle}</p>
       <p class="text-[20px] flex-1 font-indivisibleMedium">{project.desc}</p>
     </div>
     <Grid>
