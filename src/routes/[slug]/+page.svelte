@@ -28,7 +28,7 @@
           filter: "blur(0px)",
           duration: 1.5,
           ease: "power3.out",
-        },
+        }
       );
     }
   });
@@ -58,7 +58,7 @@
     src={project.heroImage.src}
     alt="Hero image"
     loading="lazy"
-    class="w-full mt-[-85px] md-[-76px] h-[300px] m-auto md:h-[800px] 3xl:h-[1080px] max-w-[1920px] object-cover"
+    class="w-full mt-[-110px] md-[-76px] h-[300px] m-auto md:h-[800px] 3xl:h-[1080px] max-w-[1920px] object-cover"
   />
 </section>
 

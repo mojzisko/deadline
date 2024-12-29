@@ -33,7 +33,7 @@
   class:bg-black={isScrolled}
 >
   <div
-    class="flex justify-between items-center p-6 max-w-[1440px] m-auto w-full"
+    class="flex justify-between items-center px-6 py-3 max-w-[1440px] largeDesktop:max-w-[1920px] m-auto w-full"
   >
     <!-- Logo Section -->
     <div class="text-xl font-bold">

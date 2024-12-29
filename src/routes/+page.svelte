@@ -6,7 +6,7 @@
 
 <Carousel />
 <div
-  class="max-w-[1440px] m-auto w-full p-[24px] grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-[20px]"
+  class="max-w-[1440px] largeDesktop:max-w-[1920px] m-auto w-full p-[24px] grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-[20px]"
 >
   {#each projects as item}
     <ProjectItem
