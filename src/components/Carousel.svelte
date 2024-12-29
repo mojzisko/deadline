@@ -93,7 +93,7 @@
 </script>
 
 <div
-  class="carousel-container w-screen mt-[-110px] md-[-76px] h-[300px] md:h-[800px] 3xl:h-[1080px] max-w-[1920px] m-auto overflow-hidden relative"
+  class="carousel-container w-screen mt-[-110px] md-[-76px] h-[320px] md:h-[800px] 3xl:h-[1080px] max-w-[1920px] m-auto overflow-hidden relative"
   on:touchstart={handlePanStart}
   on:touchmove={handlePanMove}
   on:touchend={handlePanEnd}
