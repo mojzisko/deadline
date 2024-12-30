@@ -93,7 +93,7 @@
 >
   <nav class="flex flex-col justify-center items-center h-full space-y-8">
     <a
-      href="/work"
+      href="/"
       class="text-2xl text-gray-900 dark:text-white hover:text-blue-500">Work</a
     >
     <a
