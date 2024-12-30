@@ -21,8 +21,8 @@ export default [
   },
   {
     imagePath: "images/mini_projects/final/D_BIATLON_THUMBNAIL_800x600.png",
-    title: "Biathlon",
-    href: "/biathlon",
+    title: "Biatlon",
+    href: "/biatlon",
   },
   {
     imagePath: "images/mini_projects/final/D_BRBR_THUMBNAIL_800x600.png",

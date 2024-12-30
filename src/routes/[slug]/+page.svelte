@@ -58,7 +58,7 @@
     src={project.heroImage.src}
     alt="Hero image"
     loading="lazy"
-    class="w-full mt-[-110px] md-[-76px] h-[320px] m-auto md:h-[800px] 3xl:h-[1080px] max-w-[1920px] object-cover"
+    class="w-full lg:mt-[-100px] mt-[-76px] md:mt-[-85px] h-auto 3xl:aspect-none aspect-[4/3] 2xl:h-[800px] 3xl:h-[1080px] max-w-[1920px] object-cover"
   />
 </section>
 

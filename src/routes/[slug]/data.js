@@ -41,9 +41,9 @@ export default {
     subTitle: 'Logotyp a vizuální identita služby převozník',
     desc: 'Převozník je kurýrní služba zabývající se přepravní logistikou. hlavním cílem je přeprava z bodu a do bodu B ve stanoveném čase. Právě cílová destinace se stala nosným prvkem loga, ve kterém kombinujeme počáteční písmeno P s cílovou vlaječkou'
   },
-  'biathlon': {
-    heroImage: { src: 'images/main_images/finalD_BIATLON_THUMBNAIL_2560x1440.png'},
-    title: 'Biathlon',
+  'biatlon': {
+    heroImage: { src: 'images/main_images/final/D_BIATLON_THUMBNAIL_2560x1440.png'},
+    title: 'Biatlon',
     subTitle: 'Logotyp a vizuální identita služby převozník',
     desc: 'Převozník je kurýrní služba zabývající se přepravní logistikou. hlavním cílem je přeprava z bodu a do bodu B ve stanoveném čase. Právě cílová destinace se stala nosným prvkem loga, ve kterém kombinujeme počáteční písmeno P s cílovou vlaječkou'
   },

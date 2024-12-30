@@ -5,20 +5,29 @@
   const slides = [
     {
       id: 1,
-      image: "images/main_images/D_projects_2560x1440_ACS.png",
+      image: "images/main_images/final/D_ACS_THUMBNAIL_2560x1440.png",
+      mobileImage: "images/mini_projects/final/D_ACS_THUMBNAIL_800x600.png",
       alt: "Sparta",
     },
     {
       id: 2,
-      image: "images/main_images/D_projects_2560x1440_BASELINER.png",
-      alt: "Project 2",
+      image: "images/main_images/final/D_BASELINER_THUMBNAIL_2560x1440.png",
+      mobileImage:
+        "images/mini_projects/final/D_BASELINER_THUMBNAIL_800x600.png",
+      alt: "Baseliner",
     },
     {
       id: 3,
-      image: "images/main_images/D_projects_2560x1440_BIATLON.png",
-      alt: "Project 3",
+      image: "images/main_images/final/D_BEZADRESY_THUMBNAIL_2560x1440.png",
+      mobileImage: "images/mini_projects/final/D_BA_THUMBNAIL_800x600.png",
+      alt: "bez adresy",
     },
-    // Add more slides as needed
+    {
+      id: 3,
+      image: "images/main_images/final/D_BIATLON_THUMBNAIL_2560x1440.png",
+      mobileImage: "images/mini_projects/final/D_BIATLON_THUMBNAIL_800x600.png",
+      alt: "biatlon",
+    },
   ];
 
   let currentIndex = 0;
@@ -93,7 +102,7 @@
 </script>
 
 <div
-  class="carousel-container w-screen mt-[-110px] md-[-76px] h-[320px] md:h-[800px] 3xl:h-[1080px] max-w-[1920px] m-auto overflow-hidden relative"
+  class="carousel-container w-screen lg:mt-[-100px] mt-[-76px] md:mt-[-85px] h-auto 3xl:aspect-none aspect-[4/3] 2xl:h-[800px] 3xl:h-[1080px] max-w-[1920px] m-auto overflow-hidden relative"
   on:touchstart={handlePanStart}
   on:touchmove={handlePanMove}
   on:touchend={handlePanEnd}

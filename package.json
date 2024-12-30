@@ -23,6 +23,7 @@
 	"type": "module",
 	"dependencies": {
 		"@lottiefiles/dotlottie-svelte": "^0.4.3",
+		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"gsap": "^3.12.5",
 		"lottie-web": "^5.12.2",
 		"swiper": "^11.1.14"
