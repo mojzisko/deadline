@@ -5,26 +5,28 @@
   const slides = [
     {
       id: 1,
-      image: "images/main_images/final/D_ACS_THUMBNAIL_2560x1440.png",
+      image: "images/projects_images/ACS/D_ACS_THUMBNAIL_2560x1440.png",
       mobileImage: "images/mini_projects/final/D_ACS_THUMBNAIL_800x600.png",
       alt: "Sparta",
     },
     {
       id: 2,
-      image: "images/main_images/final/D_BASELINER_THUMBNAIL_2560x1440.png",
+      image:
+        "images/projects_images/BASELINER/D_BASELINER_THUMBNAIL_2560x1440.png",
       mobileImage:
         "images/mini_projects/final/D_BASELINER_THUMBNAIL_800x600.png",
       alt: "Baseliner",
     },
     {
       id: 3,
-      image: "images/main_images/final/D_BEZADRESY_THUMBNAIL_2560x1440.png",
+      image:
+        "images/projects_images/BEZADRESY/D_BEZADRESY_THUMBNAIL_2560x1440.png",
       mobileImage: "images/mini_projects/final/D_BA_THUMBNAIL_800x600.png",
       alt: "bez adresy",
     },
     {
       id: 3,
-      image: "images/main_images/final/D_BIATLON_THUMBNAIL_2560x1440.png",
+      image: "images/projects_images/BIATLON/D_BIATLON_THUMBNAIL_2560x1440.png",
       mobileImage: "images/mini_projects/final/D_BIATLON_THUMBNAIL_800x600.png",
       alt: "biatlon",
     },

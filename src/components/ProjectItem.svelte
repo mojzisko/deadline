@@ -1,6 +1,7 @@
 <script>
   import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
+  import { goto } from "$app/navigation";
   import gsap from "gsap";
 
   export let imagePath;
@@ -8,6 +9,11 @@
   export let href;
 
   let titleElement;
+
+  function handleClick(event) {
+    event.preventDefault();
+    goto(href);
+  }
 
   function handleMouseEnter() {
     gsap.to(titleElement, { x: 5, duration: 1.5, ease: "power2.out" });
@@ -70,10 +76,12 @@
   }
 </script>
 
-<a
+<button
+  on:click={handleClick}
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}
-  {href}
+  sveltekit:prefetch
+  sveltekit:navigate
   class="relative rounded-[15px] font-basicSemibold group overflow-hidden"
 >
   <img
@@ -86,12 +94,12 @@
 
   <div
     bind:this={titleElement}
-    class="absolute bottom-4 rounded-[5px] left-4 px-3 py-3 text-white bg-black bg-opacity-70  "
+    class="absolute bottom-4 rounded-[5px] left-4 px-3 py-3 text-white bg-black bg-opacity-70"
     style="background: rgba(0, 0, 0, 0.7);"
   >
     <p class="text-sm !leading-none md:text-base">{title}</p>
   </div>
-</a>
+</button>
 
 <style>
   img {

@@ -1,17 +1,20 @@
 <script>
   import { onMount } from "svelte";
+  import { page } from "$app/stores";
   import gsap from "gsap";
   import ImageItemDetail from "../../components/ImageItemDetail.svelte";
   import ProjectItem from "../../components/ProjectItem.svelte";
   import Grid from "../../components/Grid.svelte";
+  import projects from "../../lib/projects";
 
   export let data;
 
   let project = data.project;
 
-  // happy happy haaaaaappyyyy
-
-  console.log("project", project);
+  const filteredProjects = projects
+    .filter((item) => !item.href.includes($page.params.slug))
+    .sort(() => 0.5 - Math.random()) // Shuffle the array
+    .slice(0, 5);
 
   let imageElement;
 
@@ -32,24 +35,6 @@
       );
     }
   });
-
-  const items = [
-    {
-      imagePath: "images/D_projects_prevoznik.png",
-      title: "Převozník",
-      href: "/prevoznik",
-    },
-    {
-      imagePath: "images/D_projects_800x600.png",
-      title: "Převozník",
-      href: "/prevoznik",
-    },
-    {
-      imagePath: "images/D_projects_800x600.png",
-      title: "Převozník",
-      href: "/prevoznik",
-    },
-  ];
 </script>
 
 <section class="w-full">
@@ -79,11 +64,13 @@
       <p class="text-[24px] flex-1 font-indivisibleBold">{project.subTitle}</p>
       <p class="text-[20px] flex-1 font-indivisibleMedium">{project.desc}</p>
     </div>
-    <Grid>
-      {#each items as item}
-        <ImageItemDetail imagePath={item.imagePath} title={item.title} />
-      {/each}
-    </Grid>
+    {#if project.detailImages}
+      <Grid>
+        {#each project.detailImages as item}
+          <ImageItemDetail imagePath={item.src} />
+        {/each}
+      </Grid>
+    {/if}
   </div>
 </section>
 
@@ -93,7 +80,7 @@
   >
     <h1 class="text-[20px] lg:text-[25px]">Další projekty</h1>
     <Grid>
-      {#each items as item}
+      {#each filteredProjects as item}
         <ProjectItem
           href={item.href}
           imagePath={item.imagePath}

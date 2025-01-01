@@ -64,20 +64,20 @@
     >
       <!-- Top Line -->
       <div
-        class="w-6 h-0.5 bg-current my-1 transform transition-all duration-300"
+        class="w-6 h-[0.175rem] bg-current my-1 transform transition-all duration-300"
         class:rotate-45={isMenuOpen}
-        class:translate-y-[0.73rem]={isMenuOpen}
+        class:translate-y-[0.83rem]={isMenuOpen}
       ></div>
 
       <!-- Middle Line -->
       <div
-        class="w-6 h-0.5 bg-current my-1 transform transition-all duration-300"
+        class="w-6 h-[0.175rem] bg-current my-1 transform transition-all duration-300"
         class:opacity-0={isMenuOpen}
       ></div>
 
       <!-- Bottom Line -->
       <div
-        class="w-6 h-0.5 bg-current my-1 transform transition-all duration-300"
+        class="w-6 h-[0.175rem] bg-current my-1 transform transition-all duration-300"
         class:-rotate-45={isMenuOpen}
         class:-translate-y-2={isMenuOpen}
       ></div>
