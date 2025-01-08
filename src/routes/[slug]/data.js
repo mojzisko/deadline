@@ -3,7 +3,7 @@ export default {
     heroImage: { src: 'images/projects_images/PREVOZNIK/D_PREVOZNIK_THUMBNAIL_2560x1440.png'},
     title: 'Převozník',
     subTitle: 'Logotyp a vizuální identita služby převozník',
-    desc: 'Převozník je kurýrní služba zabývající se přepravní logistikou. hlavním cílem je přeprava z bodu a do bodu B ve stanoveném čase. Právě cílová destinace se stala nosným prvkem loga, ve kterém kombinujeme počáteční písmeno P s cílovou vlaječkou',
+    desc: 'Rebranding fotbalového klubu ac sparta praha vznikl ve spolupráci s agenturou Go4Gold',
   },
   'zelezna': {
     heroImage: { src: 'images/projects_images/ZELEZNA/D_ZELEZNA_THUMBNAIL_2560x1440.png'},
@@ -21,8 +21,8 @@ export default {
   'acs': {
     heroImage: { src: 'images/projects_images/ACS/D_ACS_THUMBNAIL_2560x1440.png'},
     title: 'AC Sparta Praha',
-    subTitle: 'Logotyp a vizuální identita služby převozník',
-    desc: 'Převozník je kurýrní služba zabývající se přepravní logistikou. hlavním cílem je přeprava z bodu a do bodu B ve stanoveném čase. Právě cílová destinace se stala nosným prvkem loga, ve kterém kombinujeme počáteční písmeno P s cílovou vlaječkou',
+    subTitle: 'klient GO4GOLD, ac sparta praha <br /> design go4gold, šimon matějka <br /> 2021',
+    desc: 'Rebranding fotbalového klubu ac sparta prahavznikl ve spolupráci s agenturou Go4Gold',
     detailImages: [{src: 'images/projects_images/ACS/D_projects_800x6003.png'}, {src: 'images/projects_images/ACS/D_projects_800x6004.png'}, {src: 'images/projects_images/ACS/D_projects_800x6005.png'}, {src: 'images/projects_images/ACS/D_projects_800x6006.png'}, {src: 'images/projects_images/ACS/D_projects_800x6007.png'},]
   },
   'automation-dock': {
