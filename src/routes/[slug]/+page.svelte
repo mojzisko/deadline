@@ -61,7 +61,9 @@
       </a>
     </div>
     <div class="flex flex-col gap-[10px] md:flex-row justify-between">
-      <p class="text-[24px] flex-1 font-indivisibleBold uppercase">
+      <p
+        class="text-[22px] md:text-[24px] flex-1 font-indivisibleBold uppercase"
+      >
         {@html project.subTitle}
       </p>
       <p class="text-[20px] flex-1 font-indivisibleMedium">{project.desc}</p>

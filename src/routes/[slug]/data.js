@@ -21,7 +21,7 @@ export default {
   'acs': {
     heroImage: { src: 'images/projects_images/ACS/D_ACS_THUMBNAIL_2560x1440.png'},
     title: 'AC Sparta Praha',
-    subTitle: 'klient GO4GOLD, ac sparta praha <br /> design go4gold, šimon matějka <br /> 2021',
+    subTitle: 'klient GO4GOLD, ac&nbsp;sparta&nbsp;praha <br /> design go4gold, šimon&nbsp;matějka <br /> 2021',
     desc: 'Rebranding fotbalového klubu ac sparta prahavznikl ve spolupráci s agenturou Go4Gold',
     detailImages: [{src: 'images/projects_images/ACS/D_projects_800x6003.png'}, {src: 'images/projects_images/ACS/D_projects_800x6004.png'}, {src: 'images/projects_images/ACS/D_projects_800x6005.png'}, {src: 'images/projects_images/ACS/D_projects_800x6006.png'}, {src: 'images/projects_images/ACS/D_projects_800x6007.png'},]
   },
